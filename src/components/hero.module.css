@@ -1,0 +1,10 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--red);
+    margin-top: 20vh;
+}
+.special {
+    color: var(--foreground);
+}
