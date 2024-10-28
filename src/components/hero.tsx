@@ -4,7 +4,7 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 import { useTheme, useMediaQuery } from '@mui/material';
 import styles from "./hero.module.css";
-import { initTextScramble } from '@/scripts/scrambletext';
+import { initTextScramble } from '@/scripts/scrambler';
 
 const Hero: React.FC = () => {
     const theme = useTheme();
