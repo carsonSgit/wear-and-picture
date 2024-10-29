@@ -33,25 +33,46 @@ const spellings = {
         ".", "!", "?", "‽", "†", "‡", "ʕ", "ƛ", ",", "-", "‽"
       ]
   };
-  
+
   let interval: number | null = null;
-  
-  export function initTextScramble(element: HTMLElement) {
-    const originalText = element.dataset.value || "";
-    const possibleSpellings = spellings[originalText as keyof typeof spellings] || [originalText];
-  
-    element.onmouseover = () => {
-      clearInterval(interval as number);
-  
-      interval = window.setInterval(() => {
-        const target = element;
-        target.innerText = possibleSpellings[Math.floor(Math.random() * possibleSpellings.length)];
-      }, 50);
-    };
-  
-    element.onmouseout = () => {
-      clearInterval(interval as number);
-      element.innerText = originalText;
-    };
-  }
-  
+
+export function initTextScramble(element: HTMLElement) {
+  const originalText = element.dataset.value || "";
+  const possibleSpellings = spellings[originalText as keyof typeof spellings] || [originalText];
+
+  const scrambleInterval = window.setInterval(() => {
+    element.innerText = possibleSpellings[Math.floor(Math.random() * possibleSpellings.length)];
+  }, 50);
+
+  setTimeout(() => {
+    clearInterval(scrambleInterval);
+    startReverseScramble(element, originalText);
+  }, 1100);
+
+  element.onmouseover = () => {
+    clearInterval(interval as number);
+    interval = window.setInterval(() => {
+      element.innerText = possibleSpellings[Math.floor(Math.random() * possibleSpellings.length)];
+    }, 50);
+  };
+
+  element.onmouseout = () => {
+    clearInterval(interval as number);
+    startReverseScramble(element, originalText);
+  };
+}
+
+function startReverseScramble(element: HTMLElement, originalText: string) {
+  let currentText = element.innerText;
+  let i = originalText.length - 1; 
+
+  const reverseInterval = window.setInterval(() => {
+    if (i < 0) {
+      clearInterval(reverseInterval);
+    } else {
+      currentText = currentText.slice(0, i) + originalText[i] + currentText.slice(i + 1);
+      element.innerText = currentText;
+      i--;
+    }
+  }, 30);
+}
