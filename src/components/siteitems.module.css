@@ -1,0 +1,50 @@
+/* SiteItems.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    background-color: #ccc;
+    background-position: center;
+    background-size: cover;
+    transition: background-color 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    color: var(--linkRed);
+    text-decoration: underline;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+        margin-top: 3.5rem;
+        gap: 8rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        margin-top: 3.5rem;
+        gap: 5rem;
+    }
+}

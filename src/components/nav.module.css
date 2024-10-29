@@ -1,0 +1,13 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background: var(--background) !important;
+    color: var(--red) !important;
+    font-size: 1.5rem;
+}
+
+.nav h1 {
+    font-weight: var(--font-weight);
+}
