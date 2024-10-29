@@ -38,7 +38,8 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 10rem;
+  gap: 8rem;
+  margin-top: 3rem;
   grid-row-start: 2;
 }
 
