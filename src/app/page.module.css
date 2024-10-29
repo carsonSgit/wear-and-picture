@@ -10,7 +10,6 @@
   grid-template-rows: 20px 1fr 20px;
   justify-items: center;
   min-height: 100svh;
-  padding: 80px;
   gap: 64px;
   font-family: var(--font-geist-sans);
   animation: fadeIn 1s;
@@ -39,7 +38,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 10rem;
   grid-row-start: 2;
 }
 
