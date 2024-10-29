@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
 import styles from './siteitems.module.css';
+import { initTextScramble } from '../scripts/siteItemScrambler'; 
 
 const SiteItems: React.FC = () => {
     const items = [
@@ -11,18 +14,28 @@ const SiteItems: React.FC = () => {
     return (
         <div className={styles.container}>
             {items.map(item => (
-                <a
+                <div
                     key={item.id}
-                    href={item.link}
                     className={styles.item}
-                    style={{ backgroundImage: item.image }}
+                    style={{ backgroundImage: item.image, fontFamily: 'JetBrains Mono, monospace' }}
                 >
                     <div className={styles.overlay}>
-                        <span className={styles.text}>{item.text}</span>
+                        <a href={item.link}>
+                                <span 
+                                    className={styles.text}
+                                    data-value={item.text}
+                                    ref={(ref) => {
+                                        if (ref) {
+                                            initTextScramble(ref);
+                                        }
+                                    }}
+                                >
+                                {item.text}
+                            </span>
+                        </a>
                     </div>
-                </a>
+                </div>
             ))}
-            
         </div>
     );
 };

@@ -1,10 +1,9 @@
 const hero = {
-  wear: [
-    "we4r", "w3ar", "w3@r", "w34r", "v34r", "v3@r", "^3@r", "we@r", "w34®", 
-    "w#ar", "v3*r", "^e4r", "v#4r", "w#@r", "^e*r", "^34r", "v34@", "v@4®", 
-    "^3*r", "we*4", "v#ar", "v3@®", "w3*r", "^#ar", "we*4", "w3@®", "v34®", 
-    "w3*4", "w#4®", "^3*r", "w3*r", "^@ar", "w#4r", "w34@", "v#ar", "we@®", 
-    "w@4®"
+  wear: [ "w34r", "v34r", "v3Lr", "^3*r", "weFr", "w34®", 
+    "w#ar", "v3*r", "^e4r", "v#4r", "w#Or", "^e*r", "^34r", "v34^", "v>4®", 
+    "^3*r", "we*4", "v#ar", "v3L®", "w3*r", "^#ar", "we*4", "w3S®", "v34®", 
+    "w3*4", "w#4®", "^3*r", "w3*r", "^Mar", "w#4r", "w34Z", "v#ar", "we<®", 
+    "w!4®"
   ],
   
   "%20": [
@@ -51,7 +50,7 @@ export function initTextScramble(element: HTMLElement) {
     clearInterval(interval as number);
     interval = window.setInterval(() => {
       element.innerText = possibleSpellings[Math.floor(Math.random() * possibleSpellings.length)];
-    }, 50);
+    }, 60);
   };
 
   element.onmouseout = () => {
