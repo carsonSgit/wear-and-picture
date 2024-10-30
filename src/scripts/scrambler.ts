@@ -1,4 +1,4 @@
-const hero = {
+const scrambleData = {
   wear: [ "w34r", "v34r", "v3Lr", "^3*r", "weFr", "w34®", 
     "w#ar", "v3*r", "^e4r", "v#4r", "w#Or", "^e*r", "^34r", "v34^", "v>4®", 
     "^3*r", "we*4", "v#ar", "v3L®", "w3*r", "^#ar", "we*4", "w3S®", "v34®", 
@@ -35,7 +35,7 @@ let interval: number | null = null;
 
 export function initTextScramble(element: HTMLElement) {
   const originalText = element.dataset.value || "";
-  const possibleSpellings = hero[originalText as keyof typeof hero] || [originalText];
+  const possibleSpellings = scrambleData[originalText as keyof typeof scrambleData] || [originalText];
 
   const scrambleInterval = window.setInterval(() => {
     element.innerText = possibleSpellings[Math.floor(Math.random() * possibleSpellings.length)];

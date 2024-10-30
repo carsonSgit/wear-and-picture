@@ -1,8 +1,20 @@
 
-const scrambleData: Record<string, string[]> = {
-    BLOG: ["*LO4", "b!^P", "P10G", "G#=8", "B1OG", "&-iG", "B0L8", "B:'G"],
-    PICS: ["P!C^", "bI>S", "E!XZ", "P1C5", "%L4A", "B&*s", "P+CS", "G!<3"],
-    INSP: ["I/5E", "^F=P", "!^SV", "1O8/", "2N%P", "l^5X", "M4d^", "I*&!"],
+const scrambleData = {
+  BLOG: [
+      "B!OG", "B*O*", "B+1G", "8L0#", "B=OG", "B/OG", "P=1G", "BL>G", 
+      "B-1*", "BL+G", "B*L1", "BL*G", "B:1G", "B!<G", "B1<G", "B0O8", 
+      "B^OG", "P*OG", "B!O3", "B-1G", "P10G", "B:'G", "B*!G", "P^1G"
+  ],
+  PICS: [
+      "P1C^", "P!X*", "P%IC", "P*4S", "P&=C", "PI4S", "P^CS", "P>C-", 
+      "PL^S", "P!C*", "P1CZ", "P%#S", "PI+S", "P&^S", "P+IC", "PI<S", 
+      "P*CS", "B!*S", "P3CS", "P:C^", "P/IC", "PIXS", "P*^S", "P!C5"
+  ],
+  INSP: [
+      "IN^5", "I*5E", "I>S8", "IN+P", "I^8X", "I=SP", "I/&X", "IN*3", 
+      "I4SP", "I%=X", "I-8P", "IN<P", "I!^8", "I/XP", "I<SP", "IM^P", 
+      "IP#P", "I<%P", "I#=8", "IP5X", "INSP", "I&SX", "I*5%", "IM&X"
+  ]
 };
 
 let interval: number | null = null;
