@@ -1,0 +1,17 @@
+.grid{
+    display:grid;
+    grid-template-columns: 30% 70%;
+}
+
+.left{
+    background-color: aliceblue;
+}
+
+.leftImage{
+    width: 18rem;
+    height: 18rem;
+}
+
+.right{
+    background-color: red;
+}
