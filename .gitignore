@@ -1,6 +1,6 @@
 # React .gitignore: https://github.com/facebook/react/blob/main/.gitignore
 
-.env
+.env.local
 
 .DS_STORE
 node_modules
