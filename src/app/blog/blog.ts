@@ -1,11 +1,21 @@
 import { createClient } from "@/utils/supabase/client";
 
-export default async function getBlogs() {
-    const supabase = await createClient();
-    const { data: blogs } = await supabase.from("blogs").select();
+interface Blog {
+    id: number;
+    image: string;
+    title: string;
+    text: string;
+}
 
-    console.log("Logging blogs...");
-    console.log(blogs);
-    console.log("Supabase...");
-    console.log(supabase);
+export default async function getBlogs(): Promise<Blog[] | null> {
+    const supabase = await createClient();
+    const { data: blogs, error } = await supabase.from("blogs").select();
+
+    if (error) {
+        console.error("Error fetching blogs:", error);
+        return null;
+    }
+
+
+    return blogs as Blog[];
 }

@@ -29,12 +29,13 @@
 .blogText{
     color: var(--foreground);
     font-size: 1.5rem;
+    text-wrap: wrap;
 }
 
 @media (min-width: 1024px) {
     .grid {
         flex-direction: row;
-        gap: 8rem;
+        gap: 6rem;
     }
 }
 
@@ -44,5 +45,12 @@
         display: flex;
         margin-top: 3.5rem;
         gap: 5rem;
+    }
+    .blogTitle{
+        text-align: center;
+    }
+    .blogText{
+        margin-top: 1rem;
+        text-align: left;
     }
 }
