@@ -9,12 +9,19 @@
 
 .scrollingContent {
     display: flex;
+    align-items: center; 
+    justify-content: center;
     white-space: nowrap;
     animation: scroll 8s linear infinite;
+    height: 100%; 
 }
 
 .scrollingContent span {
-    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
     font-size: 3rem;
     color: var(--foreground);
     padding-right: 2rem;
