@@ -1,22 +1,25 @@
 .grid{
+    padding: 2rem;
+    margin-top: 10rem;
     display:grid;
-    grid-template-columns: 25% 70%;
+    flex-direction: row;
+    grid-template-columns: 30% 60%;
 }
 
 .left{
     display: flex;
-    background-color: aliceblue;
     align-items: center;
     justify-content: center;
 }
 
 .blogImage{
-    align-self: center;
+    align-self: start;
     width: 18rem;
     height: 18rem;
 }
 
 .right{
+    text-wrap: wrap;
 }
 
 .blogTitle{
@@ -26,4 +29,20 @@
 .blogText{
     color: var(--foreground);
     font-size: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        flex-direction: row;
+        gap: 8rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        flex-direction: column;
+        display: flex;
+        margin-top: 3.5rem;
+        gap: 5rem;
+    }
 }
