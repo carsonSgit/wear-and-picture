@@ -34,6 +34,11 @@
     padding-right: 0.25rem;
 }
 
+.text:hover {
+    background-color: var(--linkRed);
+    color: rgb(0, 0, 0);
+}
+
 @media (min-width: 1024px) {
     .container {
         flex-direction: row;

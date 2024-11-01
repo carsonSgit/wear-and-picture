@@ -1,0 +1,37 @@
+.scrollingText {
+    overflow: hidden;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--red);
+    position: relative;
+    margin-top: 2rem;
+}
+
+.scrollingContent {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    white-space: nowrap;
+    animation: scroll 8s linear infinite;
+    height: 100%; 
+}
+
+.scrollingContent span {
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--foreground);
+    padding-right: 2rem;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}

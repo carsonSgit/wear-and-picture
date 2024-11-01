@@ -1,0 +1,60 @@
+.gridContainer {
+    margin-top: 10rem;
+}
+
+.grid{
+    padding: 2rem;
+    display:grid;
+    margin-top: 2rem;
+    flex-direction: row;
+    grid-template-columns: 30% 60%;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogImage{
+    align-self: start;
+    width: 18rem;
+    height: 18rem;
+}
+
+.right{
+    text-wrap: wrap;
+}
+
+.blogTitle{
+    color: var(--red)
+}
+
+.blogText{
+    color: var(--foreground);
+    font-size: 1.5rem;
+    text-wrap: wrap;
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        flex-direction: row;
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        flex-direction: column;
+        display: flex;
+        margin-top: 3.5rem;
+        gap: 5rem;
+    }
+    .blogTitle{
+        text-align: center;
+    }
+    .blogText{
+        margin-top: 1rem;
+        text-align: left;
+    }
+}

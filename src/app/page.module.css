@@ -38,9 +38,10 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 8rem;
-  margin-top: 3rem;
+  gap: 3rem;
+  margin-top: -0.5rem;
   grid-row-start: 2;
+  padding-top: 0px; 
 }
 
 .main ol {
@@ -138,6 +139,7 @@ a.secondary {
 @media (max-width: 600px) {
   .page {
     padding: 32px;
+    padding-top: 0px;
     padding-bottom: 80px;
   }
 

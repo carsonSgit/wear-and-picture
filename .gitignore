@@ -1,5 +1,7 @@
 # React .gitignore: https://github.com/facebook/react/blob/main/.gitignore
 
+.env.local
+
 .DS_STORE
 node_modules
 scripts/flow/*/.flowconfig

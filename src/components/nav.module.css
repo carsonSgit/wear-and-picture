@@ -5,6 +5,7 @@
     padding: 0.5rem;
     background: var(--background) !important;
     color: var(--red) !important;
+    font-family: var(--font-geist-sans);
     font-size: 1.5rem;
 }
 
