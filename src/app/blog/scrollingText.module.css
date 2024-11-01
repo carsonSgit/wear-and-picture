@@ -1,0 +1,30 @@
+.scrollingText {
+    overflow: hidden;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--red);
+    position: relative;
+    margin-top: 2rem;
+}
+
+.scrollingContent {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll 8s linear infinite;
+}
+
+.scrollingContent span {
+    display: inline-block;
+    font-size: 3rem;
+    color: var(--foreground);
+    padding-right: 2rem;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}

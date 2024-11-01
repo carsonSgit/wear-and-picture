@@ -1,7 +1,11 @@
+.gridContainer {
+    margin-top: 10rem;
+}
+
 .grid{
     padding: 2rem;
-    margin-top: 10rem;
     display:grid;
+    margin-top: 2rem;
     flex-direction: row;
     grid-template-columns: 30% 60%;
 }
@@ -35,7 +39,7 @@
 @media (min-width: 1024px) {
     .grid {
         flex-direction: row;
-        gap: 6rem;
+        gap: 4rem;
     }
 }
 
