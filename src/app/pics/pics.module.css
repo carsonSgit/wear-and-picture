@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    gap: 5rem;
+}
+
+.picsContainer {
+    overflow-x: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    scrollbar-width: none;
+}
+
+.picsContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.pics {
+    object-fit: cover;
+    height: 100%;
+    transform: scale(1);
+}
+
+@media (max-width: 1024px) {
+    .picsContainer {
+        justify-content: flex-start;
+    }
+}
