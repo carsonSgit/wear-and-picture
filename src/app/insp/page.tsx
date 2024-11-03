@@ -1,7 +1,9 @@
+import InspoTemplate from "./inspTemplate";
+
 export default function Blog(){
     return (
         <div>
-          <h1>Test</h1>
+          <InspoTemplate />
         </div>
     );
 }

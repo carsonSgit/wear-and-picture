@@ -3,7 +3,6 @@
 import styles from "./blogTemplate.module.css";
 import getBlogs from './blog';
 import { useEffect, useState } from "react";
-import ScrollingText from './ScrollingText'; // Import the ScrollingText component
 
 interface Blog {
     id: number;
@@ -36,7 +35,6 @@ export default function BlogTemplate() {
                             <p className={styles.blogText}>{blog.text}</p>
                         </div>
                     </div>
-                    <ScrollingText text="wear%20&%20picture" />
                 </div>
             ))}
         </div>
