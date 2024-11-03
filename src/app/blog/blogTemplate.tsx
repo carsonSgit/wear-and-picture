@@ -35,7 +35,6 @@ export default function BlogTemplate() {
                             <p className={styles.blogText}>{blog.text}</p>
                         </div>
                     </div>
-                    
                 </div>
             ))}
         </div>

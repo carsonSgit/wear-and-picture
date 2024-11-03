@@ -1,0 +1,81 @@
+.gridContainer {
+    margin-top: 10rem;
+}
+
+.grid{
+    padding: 2rem;
+    display:grid;
+    margin-top: 2rem;
+    flex-direction: row;
+    grid-template-columns: 30% 60%;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start; 
+}
+
+.inspoImage{
+    max-width: 18rem;
+    height: auto;
+}
+
+.inspoSubtitle{
+    margin-top: -0.5rem;
+    align-self: center;
+}
+
+.right{
+    text-wrap: wrap;
+}
+
+.inspoTitle{
+    color: var(--red)
+}
+
+.inspoText{
+    color: var(--foreground);
+    font-size: 1.5rem;
+    text-wrap: wrap;
+}
+
+.sourceLink {
+    color: var(--red);
+    text-decoration: underline;
+    transition: opacity 0.2s ease;
+}
+
+.sourceLink:hover {
+    opacity: 0.8;
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        flex-direction: row;
+        gap: 0rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        flex-direction: column;
+        display: flex;
+        margin-top: 3.5rem;
+        gap: 2rem;
+    }
+    .inspoTitle{
+        text-align: center;
+    }
+    .inspoText{
+        margin-top: 1rem;
+        text-align: left;
+    }
+}
