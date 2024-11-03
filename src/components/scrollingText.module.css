@@ -35,3 +35,12 @@
         transform: translateX(-100%); 
     }
 }
+
+@media (max-width: 1024px) {
+    .scrollingText {
+        height: 3rem;
+    }
+    .scrollingContent span {
+        font-size: 2rem;
+    }
+}
