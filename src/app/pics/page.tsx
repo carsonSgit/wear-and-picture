@@ -7,7 +7,7 @@ export default function Pics(){
     return (
         <div className={styles.container}>
           <div className={styles.picsContainer}>
-            <img className={styles.pics} src="pics_1.webp" />
+            <img className={styles.pics} src="pics_1.webp" alt="Life Pictured"/>
           </div>
             <p className={styles.typewriter}>
               <Typewriter 
