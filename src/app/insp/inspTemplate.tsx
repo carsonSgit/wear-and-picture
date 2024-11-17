@@ -38,7 +38,7 @@ export default function InspoTemplate() {
                                     src={inspo.image}
                                     alt="Inspo"
                                     style={{ width: "18rem", height: "auto" }}
-                                    onError={(e) => (e.currentTarget.src = "/path/to/placeholder-image.png")}
+                                    onError={(e) => (e.currentTarget.src = "/insp.webp")}
                                 />
                             ) : (
                                 <div

@@ -11,14 +11,15 @@ interface Inspo {
 
 export default async function getInspo(): Promise<Inspo[] | null> {
     const supabase = await createClient();
-    const { data: inspo, error } = await supabase.from("inspo").select();
+    const { data: inspo, error } = await supabase
+        .from("inspo")
+        .select()
+        .order("id", { ascending: true });
 
-    console.log(inspo);
     if (error) {
         console.error("Error fetching inspo:", error);
         return null;
     }
-
 
     return inspo as Inspo[];
 }
