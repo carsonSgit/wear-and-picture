@@ -4,6 +4,7 @@ import React from 'react';
 import { AppBar, Toolbar } from '@mui/material';
 import { usePathname } from 'next/navigation'
 import styles from "./nav.module.css";
+import Link from 'next/link';
 
 const Navbar: React.FC = () => {
     const pathname = usePathname()
@@ -11,9 +12,9 @@ const Navbar: React.FC = () => {
         <AppBar className={styles.nav} elevation={0}>
             <Toolbar>
                 <h1>
-                    <a href="/">
+                    <Link href="/">
                         [~/cs{pathname}]
-                    </a>
+                    </Link>
                 </h1>
             </Toolbar>
         </AppBar>
