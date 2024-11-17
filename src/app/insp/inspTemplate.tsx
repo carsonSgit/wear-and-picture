@@ -49,19 +49,20 @@ export default function InspoTemplate() {
                                 </div>
                             )}
                             <h4 className={styles.inspoSubtitle}>
-                                src{" "}
+                                src="{""}
                                 {inspo.image_source_link ? (
-                                    <a
-                                        href={inspo.image_source_link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className={styles.sourceLink}
-                                    >
-                                        {inspo.image_source}
-                                    </a>
+                                        <a
+                                            href={inspo.image_source_link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={styles.sourceLink}
+                                        >
+                                            {inspo.image_source}
+                                        </a>
                                 ) : (
                                     "== null"
                                 )}
+                                "
                             </h4>
                         </div>
 
