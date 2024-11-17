@@ -9,7 +9,10 @@ interface Blog {
 
 export default async function getBlogs(): Promise<Blog[] | null> {
     const supabase = await createClient();
-    const { data: blogs, error } = await supabase.from("blogs").select();
+    const { data: blogs, error } = await supabase
+    .from("blogs")
+    .select()
+    .order("id", { ascending: true });
 
     if (error) {
         console.error("Error fetching blogs:", error);
