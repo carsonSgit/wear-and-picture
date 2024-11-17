@@ -11,8 +11,8 @@ const scrambleData = {
       "P*CS", "B!*S", "P3CS", "P:C^", "P/IC", "PIXS", "P*^S", "P!C5"
   ],
   INSP: [
-      "IN^5", "I*5E", "I>S8", "IN+P", "I^8X", "I=SP", "I/&X", "IN*3", 
-      "I4SP", "I%=X", "I-8P", "IN<P", "I!^8", "I/XP", "I<SP", "IM^P", 
+      "IN^5", "I*5E", "!>S8", "LN+P", "I^8X", "I=SP", "I/&X", "IN*3", 
+      "!4SP", "I%=X", "I-8P", "IN<P", "I!^8", "I/XP", "I<SP", "IM^P", 
       "IP#P", "I<%P", "I#=8", "IP5X", "INSP", "I&SX", "I*5%", "IM&X"
   ]
 };

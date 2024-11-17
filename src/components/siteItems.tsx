@@ -6,9 +6,9 @@ import { initTextScramble } from '../scripts/siteItemScrambler';
 
 const SiteItems: React.FC = () => {
     const items = [
-        { id: 1, image: 'url(/blog.png)', text: 'BLOG', link: '/blog' },
-        { id: 2, image: 'url(/pics.png)', text: 'PICS', link: '/pics' },
-        { id: 3, image: 'url(/insp.png)', text: 'INSP', link: '/insp' },
+        { id: 1, image: 'url(/blog.webp)', text: 'BLOG', link: '/blog' },
+        { id: 2, image: 'url(/pics.webp)', text: 'PICS', link: '/pics' },
+        { id: 3, image: 'url(/insp.webp)', text: 'INSP', link: '/insp' },
     ];
 
     return (
